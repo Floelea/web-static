@@ -10,6 +10,26 @@ h1 {
   font-size: 50px;
   margin: 0;
 }
+
+/**************
+CLASSE GLOBAL
+***************/
+.btn {
+  text-decoration: none;
+  background-color: dimgray;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+  margin-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(129, 79, 59);
+}
+
 /*************
 CSS PAR SECTION
 **************/
@@ -24,4 +44,30 @@ header {
   text-align: center;
   color: white;
   padding: 150px 50px;
+}
+
+/******SECTION CONCEPT********/
+#concept ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+#concept {
+  text-align: center;
+}
+#concept ul li {
+  width: 25%;
+}
+#concept h2 {
+  margin: 50px auto;
+}
+#sanglier {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+}
+#sanglier img {
+  width: 30%;
+  margin-right: 50px;
 }
