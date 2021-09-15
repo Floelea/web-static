@@ -1,0 +1,115 @@
+/**************
+    CSS GENERAL
+**************/
+
+body {
+  font-family: "Work-sans", sans-serif;
+  margin: 0;
+}
+h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 50px;
+  margin: 20px;
+}
+
+h3 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 35px;
+}
+
+/******************
+      CSS PAR SECTION
+******************/
+
+/***********HEADER**********/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.11)),
+    url("img/pyramides.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 300px 50px;
+}
+header a {
+  text-decoration: underline;
+  color: white;
+}
+
+/**************SECTION PREZ**********/
+
+#prez {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#prez img {
+  width: 620px;
+  height: 520px;
+}
+.preze {
+  flex-direction: column;
+}
+.preze p,
+ul {
+  font-size: 18px;
+}
+
+/****************SECTION FORMULE********/
+
+.formule {
+  display: flex;
+  justify-content: space-around;
+}
+.formule span {
+  color: darksalmon;
+  font-size: 40px;
+}
+.formterr {
+  border: solid 3px darksalmon;
+  width: 500px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.formterr hr {
+  width: 350px;
+}
+
+#form {
+  text-align: center;
+}
+/*********************SECTION CONCEPT****************/
+.btn {
+  text-decoration: none;
+  color: darksalmon;
+  padding: 10px 15px;
+  border: 2px solid darksalmon;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  width: 100px;
+}
+
+.btn:hover {
+  background-color: rgb(129, 79, 59);
+}
+
+.concept {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+.footer img {
+  width: 620px;
+  height: 520px;
+}
