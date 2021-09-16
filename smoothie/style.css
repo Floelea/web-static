@@ -3,7 +3,7 @@
 ***********************/
 
 .container {
-  max-width: 1060px;
+  max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,7 +40,7 @@ header h1 {
   letter-spacing: 5px;
   font-size: 40px;
   margin-top: 200px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 /****************************
@@ -50,8 +50,103 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 50px;
 }
-section img {
+#devise img {
   width: 300px;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+section h2 {
+  text-align: center;
+}
+
+/*******************************
+      CLASSE FABRICATION
+*******************************/
+.fab img {
+  height: 50px;
+  width: 50px;
+}
+.fab {
+  background: linear-gradient(#feb4c3, #f59e28);
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+.fab li {
+  padding: 50px 0 50px 0;
+}
+
+/**********************************
+      CLASSE CONCEPT
+*********************************/
+#concept img {
+  height: 40px;
+  width: 40px;
+}
+
+#concept ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+#concept ul li {
+  width: 25%;
+}
+
+#concept {
+  text-align: center;
+}
+
+/***********************************
+          FOOTER
+***********************************/
+
+footer {
+  background: #f59e28;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*************************************
+            MEDIA
+*************************************/
+
+/*tablette*768<991px/*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/*mobile*/
+
+@media (max-width: 767px) {
+  #concept ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #concept ul li {
+    width: 100%;
+  }
+  #devise {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .fab li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/*tablette + mobile*/
+
+@media (max-width: 991px) {
 }

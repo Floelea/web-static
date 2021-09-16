@@ -1,0 +1,321 @@
+/**********************************
+            CLASSE GLOBALE
+**********************************/
+
+body {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Raleway", sans-serif;
+}
+
+#btn {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+}
+#btn:hover,
+input[type="radio"].demo1:checked + label {
+  background-color: #6e8e9b;
+  color: white;
+}
+.trait {
+  width: 4px;
+  height: 50px;
+  background-color: #6e8e9b;
+}
+/**************************************
+              CSS HEADER
+***************************************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.11)),
+    url("img/yogamat.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 100px;
+}
+header h1 {
+  font-size: 100px;
+  font-family: "Mandali", sans-serif;
+  margin: 0;
+}
+header h3 {
+  padding-bottom: 20px;
+}
+nav a {
+  padding-left: 20px;
+}
+.bouton {
+  text-align: center;
+}
+
+/******************************************
+              CSS CONCEPT
+******************************************/
+
+.concept h2 {
+  color: #6e8e9b;
+}
+
+/***************1ER PARAGRAPHE************/
+.logoun {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.logoun img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+  padding: 20px 20px;
+}
+/****************2EME PARAGRAPHE***********/
+.logodeux {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+.logodeux img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+  padding: 20px 20px;
+}
+.detendez {
+  padding-left: 40px;
+}
+/****************3EME PARAGRAPHE*************/
+.logotrois {
+  display: flex;
+  align-items: center;
+}
+.logotrois img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+  padding: 20px 20px;
+}
+/******************************************
+              CSS COURS
+******************************************/
+.cours h2 {
+  color: #6e8e9b;
+}
+
+.cours img {
+  width: 300px;
+  height: 300px;
+}
+.veuxtu {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+.vinyasa {
+  padding-left: 50px;
+}
+/******************************************
+              CSS CONTACT
+******************************************/
+.contact h2 {
+  color: #6e8e9b;
+}
+/*******************ETRE RAPPELE***************/
+input[type="radio"].demo1 {
+  display: none;
+}
+input[type="radio"].demo1 + label {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+  margin-left: 30px;
+}
+input[type="radio"].demo1:checked + label {
+  border: 1px solid #000;
+  background-color: #6e8e9b;
+  color: white;
+}
+/****************NOM PRENOM*****************/
+input[type="text"] {
+  background-color: white;
+  color: black;
+  padding: 10px 180px 10px 10px;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+  border: 0;
+  display: block;
+  margin-top: 30px;
+}
+/*******************EMAIL********************/
+input[type="email"] {
+  background-color: white;
+  color: black;
+  padding: 10px 180px 10px 10px;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+  border: 0;
+  display: block;
+  margin-top: 30px;
+}
+/*******************YOGA VINYASA**************/
+select {
+  margin-left: 30px;
+}
+.activite {
+  padding-top: 25px;
+}
+/********************ENVOYER******************/
+input[type="submit"] {
+  background-color: white;
+  color: grey;
+  padding: 15px 20px;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+  border: 0;
+  margin-top: 20px;
+}
+/*******************FOOTER*********************/
+footer {
+  background-color: #6e8e9b;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin-top: 35px;
+}
+
+/*************************************
+            MEDIA
+*************************************/
+@media (max-width: 767px) {
+  /*******************GENERAL*********************/
+  body {
+    padding: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .trait {
+    width: 2px;
+    height: 40px;
+  }
+  /*******************HEADER*********************/
+  header h1 {
+    font-size: 35px;
+    padding: 0;
+    padding-top: 50px;
+  }
+  header h3 {
+    margin: 0;
+    font-size: 10px;
+  }
+  header #btn {
+    font-size: 10px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 50px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.212);
+  }
+  nav img {
+    height: 25px;
+    width: 25px;
+  }
+  nav a {
+    padding-left: 5px;
+    font-size: 10px;
+  }
+  /*******************CONCEPT*********************/
+  .logoun {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .logoun h3 {
+    font-size: 15px;
+  }
+  .logoun p {
+    font-size: 12px;
+  }
+  .logodeux {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .logodeux h3 {
+    font-size: 15px;
+  }
+  .logodeux p {
+    font-size: 12px;
+  }
+  .detendez {
+    padding: 0;
+  }
+  .logotrois {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .logotrois h3 {
+    font-size: 15px;
+  }
+  .logotrois p {
+    font-size: 12px;
+  }
+  /*******************COURS*********************/
+  .veuxtu {
+    padding: 0;
+    align-items: flex-start;
+  }
+  .veuxtu h3 {
+    font-size: 15px;
+  }
+  .veuxtu p {
+    font-size: 10px;
+  }
+  .veuxtu img {
+    height: 180px;
+    width: 180px;
+  }
+  .cours {
+  }
+  .vinyasa {
+    padding: 0 0 0 20px;
+  }
+  /*******************CONTACT*********************/
+  form p {
+    font-size: 12px;
+  }
+
+  input[type="radio"].demo1 + label {
+    display: inline-block;
+    margin-left: 0;
+  }
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px 70px 10px 10px;
+  }
+}
