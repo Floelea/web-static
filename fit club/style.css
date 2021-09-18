@@ -1,0 +1,270 @@
+/***************CLASSE GLOBAL***********/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.btn {
+  background-color: rgb(124, 40, 99);
+  padding: 10px;
+  color: white;
+}
+.container {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*****************************************
+                  HEADER
+*****************************************/
+header {
+  background-image: linear-gradient(
+      to top right,
+      rgba(124, 40, 99, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/fitness.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  color: white;
+  padding: 20px 20px 0 20px;
+}
+nav img {
+  width: 60px;
+  height: 60px;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+}
+header h1 {
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 900;
+  margin: 0;
+}
+header h4 {
+  font-size: 23px;
+}
+.title {
+  text-align: center;
+  padding-bottom: 250px;
+  padding-top: 150px;
+}
+/************************************
+        PHOTO SOUS HEADER
+************************************/
+.programme {
+  display: flex;
+  color: white;
+  margin-top: -120px;
+}
+.programme div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 85px;
+  padding-top: 85px;
+}
+.prog1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.337), rgba(0, 0, 0, 0.337)),
+    url("img/fitnessman.jpg");
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.prog2 {
+  background-image: linear-gradient(
+      rgba(124, 40, 99, 0.5),
+      rgba(124, 40, 99, 0.5)
+    ),
+    url("img/fitnesswoman.jpg");
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+/**************************************
+        TEXTE SOUS PHOTO
+**************************************/
+.textesousprog {
+  text-align: center;
+  margin-top: 100px;
+}
+/**************************************
+        QUATRE CARREES
+**************************************/
+.quatrecarree {
+  display: flex;
+  margin-top: 100px;
+}
+.quatrecarree img {
+  width: 60px;
+  height: 60px;
+}
+.quatrecarree div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(190, 179, 179);
+  width: 25%;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.quatrecarree .uncarr {
+  border-left: none;
+}
+.quatrecarree .quatrecarr {
+  border-right: none;
+}
+/**************************************
+        JE M'INSCRIS
+**************************************/
+.banniere {
+  background-image: linear-gradient(
+      to right,
+      rgba(124, 40, 99, 0.5) 60%,
+      rgb(0, 0, 0) 40%
+    ),
+    url("img/crossfit.jpg");
+  background-size: cover;
+  background-position: center left;
+  color: white;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.container .bouton {
+  width: 40%;
+}
+.banniere .container {
+  display: flex;
+  
+  justify-content: flex-end;
+}
+.banniere .container .bouton p,
+.banniere .container .bouton a {
+  margin-left: 140px;
+}
+.banniere .container .bouton p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/**************************************
+        SIX CARREES
+**************************************/
+.sixcarree {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sixcarree img {
+  width: 60px;
+  height: 60px;
+}
+.sixcarree div {
+  
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 100px 50px 100px;
+  background-color  ;
+}
+.sixcarree div p {
+  text-align: center;
+}
+.sixcarree div:nth-child(odd){
+  background-color: rgb(218, 214, 214);
+}
+
+/**************************************
+        MAP
+**************************************/
+iframe{
+  width: 100%;
+  
+}
+.map .bandeaumap{
+  margin-top: -8px;
+  height: 15px;
+  background-color:  rgb(124, 40, 99);
+}
+/**************************************
+        FOOTER
+**************************************/
+.footers{
+  background-color: black;
+  color: white;
+  padding-bottom: 100px;
+}
+.footers .container{
+  display: flex;  
+  
+}
+
+.footers img{
+  height: 50px;
+  width: 50px;
+}
+.footers i{
+  color:  rgb(124, 40, 99);
+}
+.footers .container .footergauche {
+align-items: flex-end;
+text-align: end;
+padding: 20px 20px 0 0;
+  
+}
+
+.footerdroit section h5{
+  color: white;
+  margin: 0;
+  padding-left: 10px;
+}
+#logoadresse,#logotel,#logomail{
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  
+}
+.footers .container .footerdroit {
+  padding: 0 0 0 20px;
+}
+.footers .container .footerdroit p{
+  margin: 0;
+  padding-left: 27px;
+}
+.footergauche{
+  width: 30%;
+}
+.footerdroit{
+  width: 30%;
+}
+
+.footerformulaire{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  color: black;
+  margin-top: -100px;
+  
+}
+input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 50px 0 0 0;
+}
+input.btn{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
