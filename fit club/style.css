@@ -12,6 +12,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+
 /*****************************************
                   HEADER
 *****************************************/
@@ -136,7 +138,7 @@ header h4 {
     ),
     url("img/crossfit.jpg");
   background-size: cover;
-  background-position: center left;
+  background-position: center;
   color: white;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -206,7 +208,6 @@ iframe{
 }
 .footers .container{
   display: flex;  
-  
 }
 
 .footers img{
@@ -217,10 +218,12 @@ iframe{
   color:  rgb(124, 40, 99);
 }
 .footers .container .footergauche {
-align-items: flex-end;
 text-align: end;
 padding: 20px 20px 0 0;
-  
+}
+.footers .container .footergauche i{
+  padding-left: 10px;
+  font-size: 25px;
 }
 
 .footerdroit section h5{
@@ -243,9 +246,11 @@ padding: 20px 20px 0 0;
 }
 .footergauche{
   width: 30%;
+  
 }
 .footerdroit{
   width: 30%;
+ 
 }
 
 .footerformulaire{
@@ -268,3 +273,170 @@ input.btn{
   margin-top: 50px;
   margin-bottom: 50px;
 }
+/*************************************
+            MEDIA
+*************************************/
+
+/*mobile*/
+
+@media (max-width: 767px) {
+
+  /****************BURGER**************/
+  nav ul li{
+    display: none;
+  }
+  label{
+    font-size: 30px;
+    color: white;
+    margin-right: 30px;
+  }
+
+  /*******************NAV**************/
+  
+  nav{
+    padding: 0;
+    background-color: rgb(124, 40, 99);
+  }
+  nav img{
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+  }
+  /*******************HEADER**************/
+
+  .container {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header{
+    padding: 0 ;
+    
+  }
+  .title h1{
+    font-size: 55px;
+  }
+  /**************PHOTO SOUS HEADER************/
+  
+  .programme{
+    flex-direction: column;
+    align-items: center;
+    margin-top: -150px;
+  }
+  .programme div{
+    width: 100%;
+  
+  }
+  .programme div p{
+    font-size: 25px;
+    margin: 0;
+  }
+  .programme div h3{
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+  }
+  /**************TEXTE SOUS PHOTO************/
+  .textesousprog{
+    padding: 0 30px 0 30px;
+  }
+  /**************QUATRE CARREES************/
+  .quatrecarree {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .quatrecarree div{
+    width: calc(100% / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+/**************JE M'INSCRIS************/
+.banniere {
+padding: 0;
+background-image:none;
+background-color: black;
+
+}
+.banniere .container {
+  display: flex;
+  justify-content: center;
+}
+.banniere .container .bouton p,h2{
+  margin: 0;
+}
+.banniere .container .bouton a{
+  margin: 0;
+  text-align: center;
+}
+.banniere .container .bouton {
+  margin: 60px 0  60px 0;
+  width: 60%;
+}
+/**************SIX CARREES************/
+.sixcarree div {
+  width: 100%;
+  text-align: center;
+}
+/**************FOOTER*********************/
+.footers .container {
+  flex-direction: column; 
+}
+.footers .container .footergauche{
+  text-align: center;
+}
+.footergauche{
+  text-align: center;
+  padding-right: 0;
+  width: 100%; 
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.footergauche i{
+  color: white;
+  padding: 0 5px 0 5px;
+}
+.footerformulaire{
+  margin-bottom: 40px;
+  order: -1;
+}
+.footerdroit{
+  width: 100%;
+  
+}
+.footerdroit p{
+  padding-left: 27px;
+}
+}
+
+@media (min-width:767px){
+
+  /****************BURGER****************/
+  label{
+    display: none;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 991px){ 
+  
+  .sixcarree div{
+    width:calc(100% / 2);
+    text-align: center;
+  }
+  .sixcarree div:nth-child(odd){
+    background-color: white;
+  }
+  .sixcarree div:nth-of-type(2),
+  .sixcarree div:nth-of-type(3),
+  .sixcarree div:nth-of-type(6){
+    background-color: rgb(218, 214, 214);
+  }
+  .banniere{
+   
+    
+  }
+  
+}
+
+
