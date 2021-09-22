@@ -1,0 +1,215 @@
+/**************************************
+        CLASSE GLOBALE
+**************************************/
+* {
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Cormorant Unicase", serif;
+}
+p {
+  font-size: 20px;
+}
+ul li {
+  list-style: none;
+}
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/***************************************
+            HEADER
+***************************************/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.337), rgba(0, 0, 0, 0.337)),
+    url(img/perso.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+header nav div {
+  background-image: url(img/logoblanc.png);
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  margin: 0 40px 0 40px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 0 0;
+}
+header nav ul li {
+  font-family: "Cormorant Unicase", serif;
+  padding: 0 20px 0 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+.texteheader {
+  text-align: center;
+  padding: 100px 0 290px 0;
+}
+.texteheader h1 {
+  font-size: 75px;
+}
+
+/***************************************
+            TEXTE SOUS HEADER
+***************************************/
+.textesousheader .container {
+  text-align: center;
+}
+.textesousheader .container h1 {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.textesousheader .container p {
+  font-size: 20px;
+}
+.textesousheader {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/***************************************
+            PARAGRAPHE
+***************************************/
+.paragraphe {
+  margin-bottom: 50px;
+}
+.paragraphe .container {
+  display: flex;
+  justify-content: space-around;
+}
+.paragraphe h1 {
+  font-size: 120px;
+  padding-bottom: 50px;
+  color: rgba(79, 17, 34, 0.281);
+}
+.paragraphe h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+  margin: -120px 0 0 25px;
+}
+.paragraphe .container div {
+  width: calc(100% / 3);
+}
+.paragraphedeux {
+  padding: 0 30px 0 30px;
+}
+/***************************************
+            PERSONNAGES
+***************************************/
+.personnages .container ul li img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+.personnages .container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.personnages .container ul li {
+  width: calc(100% / 3);
+  margin-top: 100px;
+}
+.personnages .container {
+  border: 1px solid black;
+  text-align: center;
+  padding: 60px 0 60px 0;
+}
+.personnages .container h1 {
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+.personnages .container ul li h4 {
+  font-size: 30px;
+}
+.personnages .container ul li p {
+  font-size: 15px;
+}
+/***************************************
+            RENCONTRES
+***************************************/
+.rencontres h1 {
+  font-size: 50px;
+}
+.rencontres .container {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.rencontres img {
+  height: 300px;
+  width: 400px;
+}
+/***************************************
+            AVENTURE
+***************************************/
+.aventure {
+  background-image: url(img/gandalf.jpg);
+  background-position: center 30%;
+  background-size: cover;
+  text-align: center;
+}
+
+.aventure .btn {
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 25px;
+}
+.aventure div {
+  padding-bottom: 200px;
+  padding-top: 25px;
+}
+.aventure h1 {
+  padding-top: 200px;
+  padding-bottom: 25px;
+  font-size: 50px;
+  color: white;
+}
+/***************************************
+            FOOTER
+***************************************/
+.footer{
+  background-color:  rgb(79, 17, 34);
+  color: white;
+  padding: 20px 0 20px 0;
+}
+.footer .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footergauche,#footerdroit{
+  padding-left: 0;
+}
+.footer #footerdroit a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.logofooter {
+  background-image: url(img/logoblanc.png);
+  background-size: cover;
+  height: 110px;
+  width: 110px;
