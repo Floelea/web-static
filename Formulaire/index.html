@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de voyage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Candidater pour partir en voyage</h1>
+    <p>Notre société Evasion vous propose de découvrir en avant-première des lieux paradisiaques que nous souhaitons
+        ajouter à notre catalogue. Merci de remplir les différents champs ci-dessous pour candidater au poste
+        d'Eva'discover ! </p>
+    <!------------------------COORDONNEES-------------------->
+    <form action=>
+        <div class="coordonnees">
+
+            <fieldset>
+                <legend>Coordonnées</legend>
+                <ul>
+                    <li id="email">
+                        <label for="email">Votre email <em>(*)</em>:</label>
+                        <input type="email" id="email" placeholder="florian.demoustier@gmail.com">
+                    </li>
+
+                    <li id="tel">
+                        <label for="telephone">Votre téléphone:</label>
+                        <input type="text" id="telephone" placeholder="06.22.12.53.91">
+                    </li>
+                </ul>
+            </fieldset>
+
+
+        </div>
+        <!------------------------INFORMATIONS PERSONNELLES-------------------->
+
+
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <ul>
+                <li id="nom">
+                    <label for="nom">Votre nom:</label>
+                    <input type="text" id="nom" placeholder="Demoustier">
+                </li>
+                <li id="prenom">
+                    <label for="prenom">Votre prénom:</label>
+                    <input type="text" id="prénom" placeholder="Florian">
+                </li>
+            </ul>
+            <hr>
+            <!------------------------GENRE-------------------->
+            <div class="genre">
+                <ul>
+                    <li>
+                        <p>Vous êtes plutôt:</p>
+                    </li>
+                    <li> <input type="radio" id="femme" name="sexe" value="femme">
+                        <label for="femme">une femme</label>
+                    </li>
+                    <li> <input type="radio" id="homme" name="sexe" value="homme">
+                        <label for="homme">un homme</label>
+                    </li>
+                    <li> <input type="radio" id="determiner" name="sexe" value="determiner">
+                        <label for="determiner">à déterminer</label>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <!------------------------ADRESSE-------------------->
+            <ul>
+                <li id="adresse">
+                    <label for="adresse">Votre adresse:</label>
+                    <input type="text" id="adresse">
+                </li>
+                <li id="codepostal">
+                    <label for="codepostal">Votre code postal:</label>
+                    <input type="text" id="codepostal">
+                </li>
+                <li id="ville">
+                    <label for="ville">Votre ville:</label>
+                    <input type="text" id="ville">
+                </li>
+                <li id="departement">
+                    <label for="departement">Votre département:</label>
+                    <select name="departement">
+                        <option value="">Choisissez un département</option>
+                        <option value="Rhône">Rhône</option>
+                        <option value="Ain">Ain</option>
+                    </select>
+                </li>
+            </ul>
+            <hr>
+            <!------------------------BUDGET-------------------->
+            <p>Quel budget êtes-vous prêt à investir pour valider votre candidature ?</p>
+            <ul>
+                <li>
+                    <label for="budget">Budget:</label>
+                    0<input type="range" list="tickmarks">100
+
+                    <datalist id="tickmarks">
+                        <option value="0" label="0%">
+                        <option value="10">
+                        <option value="20">
+                        <option value="30">
+                        <option value="40">
+                        <option value="50" label="50%">
+                        <option value="60">
+                        <option value="70">
+                        <option value="80">
+                        <option value="90">
+                        <option value="100" label="100%">
+                    </datalist>
+                </li>
+            </ul>
+        </fieldset>
+        <!------------------------BUDGET-------------------->
+        <fieldset>
+            <legend>Langues</legend>
+            <div class="langues">
+                <p>Merci de cocher toutes les langues que vous pratiquez :</p>
+
+                <input type="checkbox" id="anglais" name="anglais">
+                <label for="anglais">Anglais</label>
+
+                <input type="checkbox" id="français" name="français">
+                <label for="français">Français</label>
+
+                <input type="checkbox" id="Espagnol" name="espagnol">
+                <label for="espagnol">Espagnol</label>
+
+                <input type="checkbox" id="italien" name="italien">
+                <label for="italien">Italien</label>
+
+                <input type="checkbox" id="allemand" name="allemand">
+                <label for="allemand">Allemand</label>
+
+                <input type="checkbox" id="armenien" name="armenien">
+                <label for="armenien">Armenien</label>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Vos destinations de rêves</legend>
+            <div class="destinations">
+
+
+                <label>Choisir vos destinations :</label>
+
+                <select name="pets" multiple size="4">
+                    <optgroup label="Outre-mer">
+                        <option value="Martinique">Martinique</option>
+                        <option value="Reunion">Reunion</option>
+                        <option value="Guadeloupe">Guadeloupe</option>
+                    </optgroup>
+                    <optgroup label="Etranger">
+                        <option value="New-York">New-York</option>
+                        <option value="Hawai">Hawai</option>
+                        <option value="Cuba">Cuba</option>
+                    </optgroup>
+                </select>
+            </div>
+            <p id="controler">Bien maintenir la touche CTRL enfoncée pour sélectionner plusieurs choix</p>
+        </fieldset>
+
+        <input type="submit" value="Envoyer">
+    </form>
+
+
+</body>
+
+</html>

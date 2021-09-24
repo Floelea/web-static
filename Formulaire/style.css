@@ -1,0 +1,77 @@
+body {
+  background-image: url(img/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 16px 0 16px 0;
+  padding: 0;
+}
+fieldset {
+  margin-bottom: 20px;
+}
+/**********************************
+            COORDONNEES
+**********************************/
+
+#email {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+}
+/**********************************
+        INFORMATIONS PERSONNELLES
+**********************************/
+
+/******NOM/PRENOM*****/
+#nom {
+  margin-bottom: 10px;
+}
+/*******GENRE*****/
+.genre ul {
+  display: flex;
+  align-items: center;
+}
+.genre label {
+  width: 120px;
+}
+.genre p {
+  padding-right: 65px;
+}
+/*******ADRESSE*****/
+#departement {
+  display: inline-block;
+}
+#adresse,
+#codepostal,
+#ville,
+#departement {
+  margin-bottom: 10px;
+}
+/**********************************
+        LANGUES
+**********************************/
+
+.langues label {
+  width: 130px;
+}
+/**********************************
+        DESTINATIONS
+**********************************/
+.destinations {
+  display: flex;
+  align-items: center;
+}
+.destinations select {
+  width: 250px;
+  height: 100px;
+}
+#controler {
+  font-style: italic;
+}
