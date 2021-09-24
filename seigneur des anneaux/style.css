@@ -190,20 +190,21 @@ header nav ul li a {
 /***************************************
             FOOTER
 ***************************************/
-.footer{
-  background-color:  rgb(79, 17, 34);
+.footer {
+  background-color: rgb(79, 17, 34);
   color: white;
   padding: 20px 0 20px 0;
 }
-.footer .container{
+.footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#footergauche,#footerdroit{
+#footergauche,
+#footerdroit {
   padding-left: 0;
 }
-.footer #footerdroit a{
+.footer #footerdroit a {
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -213,3 +214,141 @@ header nav ul li a {
   background-size: cover;
   height: 110px;
   width: 110px;
+}
+
+/*************************************
+            MEDIA
+*************************************/
+
+/*mobile*/
+
+@media (max-width: 767px) {
+  /***************************************
+            HEADER
+***************************************/
+
+  html p {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    padding: 0 0 100px 0;
+  }
+  header nav ul li {
+    display: none;
+  }
+  header nav ul {
+    padding: 0;
+  }
+  header {
+    background-position: top left;
+    background-size: 240%;
+    background-repeat: no-repeat;
+  }
+  header nav div {
+    width: 100px;
+    height: 100px;
+  }
+  .texteheader h1 {
+    font-size: 45px;
+    padding: 0 0 20px 0;
+  }
+  .texteheader {
+    padding: 100px 0 0 0;
+  }
+  /***************************************
+            TEXTE SOUS HEADER
+***************************************/
+  .textesousheader .container p {
+    font-size: 14px;
+  }
+  /***************************************
+            PARAGRAPHE
+***************************************/
+  .paragraphe .container {
+    flex-direction: column;
+  }
+  .paragraphe .container div {
+    width: 100%;
+  }
+  .paragraphedeux {
+    padding: 0;
+  }
+  /***************************************
+            PERSONNAGES
+***************************************/
+  .personnages .container h1 {
+    padding-bottom: 30px;
+    font-size: 40px;
+  }
+  .personnages .container {
+    padding: 30px 0 30px 0;
+  }
+  .personnages .container ul li img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .personnages .container ul li {
+    width: calc(100% / 2);
+    margin-top: 30px;
+  }
+  .personnages .container ul {
+    padding-left: 0;
+  }
+  .personnages .container ul li h4 {
+    font-size: 20px;
+  }
+  /***************************************
+            RENCONTRES
+***************************************/
+  .rencontres img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .rencontres .container {
+    flex-direction: column;
+  }
+  .rencontres .container ul {
+    padding: 0;
+  }
+  .rencontres .container h1 {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  /***************************************
+            AVENTURE
+***************************************/
+  .aventure {
+    background-size: 120%;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px 0;
+  }
+  .aventure h1 {
+    font-size: 25px;
+    padding: 0 0 30px 0;
+  }
+  .aventure .btn {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+  .aventure div {
+    padding: 0;
+  }
+  /***************************************
+            FOOTER
+***************************************/
+  .logofooter {
+    height: 80px;
+    width: 80px;
+  }
+  .footer #footerdroit a {
+    font-size: 15px;
+  }
+}
